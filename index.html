@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--menghubungkan HTML dengan CSS -->
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <!-- Navbar-fixed-top berguna agar bagian atas tidak berubah meskipun website discroll kebawah -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <!-- Fungsi button yaitu apabila layar diperkecil, maka navbar akan menjadi icon yang dapat diklik -->
+          <!-- Fungsi button ini berkaitan dengan jqquery pada javascript -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#home" class="navbar-brand page-scroll">Aulia Syifa</a>
+        </div>
+        <!-- isi dari *id* dan *data-target* harus sama -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+            <li><a href="#contact" class="page-scroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <img src="img/aulia.jpg" class="img-circle">
+      <h1>Aulia Syifa</h1>
+      <p>Mahasiswa Universitas Muhammadiyah Jakarta</p>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+
+    <!-- About -->
+    <!-- kegunaan section untuk membagi bagian ditiap halaman -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <!-- xs, sm, md, lg merupakan perilaku pada kolom terhadap lebar layar monitor yang digunakan -->
+            <p class="pKiri">Dalam matematika dan ilmu komputer, algoritme adalah prosedur langkah-demi-langkah untuk penghitungan. Algoritme digunakan untuk penghitungan, pemrosesan data, dan penalaran otomatis. Algoritme adalah metode efektif diekspresikan sebagai rangkaian terbatas dari instruksi-instruksi yang telah didefinisikan dengan baik</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="pKanan">Komponen sebuah rangkaian listrik atau rangkaian elektronik dapat dihubungkan dengan berbagai cara. Dua tipe paling sederhana adalah rangkaian seri dan parallel. Rangkaian yang disusun secara sejajar disebut rangkaian seri, sedangkan rangkaian yang disusun secara berderet disebut rangkaian paralel. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+
+
+    <!-- Portofolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Portofolio</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/1.jpg">
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/2.jpg">
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/3.jpg">
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/4.jpg">
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/5.jpg">
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/kucing/6.jpg">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Portofolio -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2>Contact</h2>
+          <hr>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <form>
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" class="form-control" placeholder="Masukan Nama">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" class="form-control" placeholder="Masukan Email">
+            </div>
+            <div class="form-group">
+              <label for="telp">No Telepon</label>
+              <input type="tel" id="telp" class="form-control" placeholder="Masukan Nomor Telepon">
+            </div>
+            <select class="form-control">
+              <option>-- Pilih Kategori --</option>
+              <option>Web Design</option>
+              <option>Web Development</option>
+            </select>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+            <textarea class="form-control" rows="10" placeholder="Masukan Pesan"></textarea>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>&copy; Copyright 2019 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="http://instagram.com/aul_syifaaa">Aulia Syifa</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="http://youtube.com/auliasyifa" class="btn btn-danger"><i class="glyphicon glyphicon-play"></i>
+            Subscribe to Youtube </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
